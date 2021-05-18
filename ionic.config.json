@@ -1,0 +1,8 @@
+{
+  "name": "OneSignal-Push",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "090dab40"
+}
