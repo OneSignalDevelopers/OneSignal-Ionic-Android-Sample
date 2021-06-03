@@ -32,31 +32,10 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
-import { useEffect } from 'react';
-
-export{}
-
-declare global {
-    interface Window {
-      plugins: any;
-      OneSignal: any;
-    }
-}
 
 const App: React.FC = () => {
-  window.OneSignal = window.OneSignal || [];
-  const OneSignal = window.OneSignal;
-  useEffect(() => {
-    OneSignal.push(()=> {
-      OneSignal.init(
-        {
-          appId: "df4e6115-7dd8-4d48-ad86-736f332b70a7",
-        }
-      );
-    });
-  }, [])
 
-  return(
+  return (
     <IonApp>
       <IonReactRouter>
         <IonTabs>
@@ -91,8 +70,8 @@ const App: React.FC = () => {
         </IonTabs>
       </IonReactRouter>
     </IonApp>);
-  }
+}
 
-  (window as any).plugins.OneSignal.setAppId("df4e6115-7dd8-4d48-ad86-736f332b70a7")
+(window as any).plugins.OneSignal.setAppId("df4e6115-7dd8-4d48-ad86-736f332b70a7");
 
 export default App;
