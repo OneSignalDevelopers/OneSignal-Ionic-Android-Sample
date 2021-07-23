@@ -6,7 +6,7 @@ Running on Cordova ```onesignal-cordova-plugin 3.0.0-beta1``` release.
 
 #### Getting Started with a new Android app - Cheat Sheet
 
-1. Create a simple Ionic app through command line or by visiting [Ionic's website](www.ionicframework.com).
+1. Create a simple Ionic app through command line or by visiting [Ionic's website](https://ionicframework.com/).
 ```ionic start```
 
 2. Choose React as your framework. Ionic React comes with Capacitor.
